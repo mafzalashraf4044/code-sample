@@ -1,0 +1,34 @@
+{
+  "environment": "test",
+  "app": {
+    "version": "1.0.0",
+    "domain": "localhost",
+    "cookie_domain": "localhost"
+  },
+  "server": {
+    "api": {
+      "name": "Mooodi Auth Test - API server",
+      "host": "localhost",
+      "port": 3031,
+      "ssl": false
+    }
+  },
+  "database": {
+    "mongodb": {
+      "uri": "mongodb://localhost",
+      "port": 27017,
+      "dbname": "practice-mooodi-auth-test"
+    },
+    "redis": {
+      "ip": "localhost",
+      "port": 4530
+    }
+  },
+  "aws": {
+    "s3": {
+      "access_key": "",
+      "secret_key": "",
+      "bucket": ""
+    }
+  }
+}

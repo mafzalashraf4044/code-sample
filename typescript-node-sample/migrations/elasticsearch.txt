@@ -1,0 +1,158 @@
+PUT user
+{
+  "mappings": {
+    "properties": {
+      "id": {
+        "type": "keyword"
+      },
+      "email": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "username": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "firstName": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "lastName": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "gender": {
+        "type": "keyword"
+      },
+      "image": {
+        "type": "keyword",
+        "index": false
+      },
+      "location": {
+        "type": "geo_point"
+      },
+      "clicks": {
+        "type": "integer",
+        "null_value": 0
+      },
+      "dt": {
+        "type": "date"
+      }
+    }
+  }
+}
+
+PUT post
+{
+  "mappings": {
+        "properties": {
+      "id": {
+        "type": "keyword"
+      },
+      "userId": {
+        "type": "keyword"
+      },
+      "moodType": {
+        "properties": {
+          "id": {
+            "type": "keyword"
+          },
+          "title": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "image": {
+            "type": "keyword",
+            "index": false
+          }
+        }
+      },
+      "preset": {
+        "properties": {
+          "id": {
+            "type": "keyword"
+          },
+          "image": {
+            "type": "keyword",
+            "index": false
+          }
+        }
+      },
+      "textStyle": {
+        "properties": {
+          "id": {
+            "type": "keyword"
+          },
+          "json": {
+            "dynamic": true,
+            "properties": {}
+          }
+        }
+      },
+      "location": {
+        "type": "geo_point"
+      },
+      "text": {
+        "type": "text"
+      },
+      "image": {
+        "type": "keyword",
+        "index": false
+      },
+      "audio": {
+        "type": "keyword",
+        "index": false
+      },
+      "video": {
+        "type": "keyword",
+        "index": false
+      },
+      "userMode": {
+        "type": "keyword"
+      },
+      "postType": {
+        "type": "keyword"
+      },
+            "feelingSame": {
+        "type": "integer",
+        "null_value": 0
+      },
+      "comments": {
+        "type": "integer",
+        "null_value": 0
+      },
+      "revealRequests": {
+        "type": "integer",
+        "null_value": 0
+      },
+      "dt": {
+        "type": "date"
+      }
+    }
+  }
+}

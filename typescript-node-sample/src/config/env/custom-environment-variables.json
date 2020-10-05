@@ -1,0 +1,24 @@
+{
+  "environment": "NODE_ENV",
+  "aws": {
+    "s3": {
+      "access_key": "AWS_ACCESS_KEY_ID",
+      "secret_key": "AWS_ACCESS_SECRET_KEY",
+      "bucket": "AWS_BUCKET"
+    }
+  },
+  "jwt": {
+    "secret": "JWT_SECRET"
+  },
+  "database": {
+    "mongodb": {
+      "uri": "MONGO_URI"
+    }
+  },
+  "rabbitmq": {
+    "password": "RMQ_PWD"
+  },
+  "nodemailer": {
+    "pass": "SES_PWD"
+  }
+}

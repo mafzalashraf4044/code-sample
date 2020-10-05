@@ -1,0 +1,34 @@
+{
+  "app": {
+    "version": "1.0.0",
+    "domain": "localhost",
+    "cookie_domain": "localhost"
+  },
+  "server": {
+    "api": {
+      "name": "Mooodi Auth - API server",
+      "host": "localhost",
+      "port": 3030,
+      "ssl": false
+    }
+  },
+  "database": {
+    "mongodb": {
+      "uri": "mongodb://localhost"
+    },
+    "redis": {
+      "ip": "localhost",
+      "port": 4530
+    }
+  },
+  "aws": {
+    "s3": {
+      "access_key": "",
+      "secret_key": "",
+      "bucket": ""
+    }
+  },
+  "jwt": {
+    "secret": "abc123"
+  }
+}

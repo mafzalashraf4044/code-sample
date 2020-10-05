@@ -1,0 +1,38 @@
+{
+  "environment": "development",
+  "app": {
+    "version": "1.0.0",
+    "domain": "localhost",
+    "cookie_domain": "localhost"
+  },
+  "server": {
+    "api": {
+      "name": "Mooodi Auth Dev - API server",
+      "host": "localhost",
+      "port": 8000,
+      "ssl": false
+    }
+  },
+  "database": {
+    "redis": {
+      "host": "localhost",
+      "port": 6379
+    }
+  },
+  "rabbitmq": {
+    "host": "localhost",
+    "username": "admin",
+    "password": "123456",
+    "port": 5672
+  },
+  "aws": {
+    "s3": {
+      "access_key": "",
+      "secret_key": "",
+      "bucket": ""
+    }
+  },
+  "jwt": {
+    "secret": "abc123"
+  },
+}
